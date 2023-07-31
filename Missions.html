@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missions</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0%;
+            color: #fff;
+        }
+        
+        header{
+            background-color: transparent;
+            height: 90px;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            z-index: 999;
+            transition: top 0.7s ease-in-out;
+        }
+        
+        #SpaceX-Logo{
+            margin-left: 30px;
+        }
+        
+        .navbar{
+            width: 800px;
+            display: flex;
+            justify-content: space-evenly;
+            margin-left: 30%;
+        }
+        
+            /* copy pasted but customized */
+            /* underline hover effect */
+        .hover{
+            display: inline-block;
+            position: relative;
+            color: 
+            #ffffff;
+        }
+        
+        .hover:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            background-color: 
+            rgb(255, 255, 255);
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+        
+        .hover:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        
+        .sep{
+            width: 92.6%;
+            background-color: #000000;
+            color: #fff;
+            display: flex;
+            text-align: center;
+            padding: 50px;
+            justify-content: space-evenly;
+        }
+        
+        .navbar-2{
+            width: 800px;
+            text-align: right;
+        }
+
+        .section{
+            background-attachment:fixed;
+            /* height: 1098px; */
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            justify-content: center;
+            position: relative;
+        }
+
+        .text{
+            background-color: transparent;
+            position: absolute;
+            bottom: 100px;
+            left: 70px;
+            padding: 10px;
+            display: flex;
+            color: #fff;
+        }
+
+        .text p {
+            margin: 0;
+        }
+
+        .text h2 {
+            margin: 5px 0;
+        }
+
+        .button {
+            width: 200px;
+            height: 46px;
+            margin-left: 70px;
+            padding: 5px;
+            border: 3px solid #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: #ffffff;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background-color: transparent;
+        }
+
+        .button p {
+            background-color: transparent;
+        }
+
+        .button:hover {
+            border-color: #000000;
+            font-size: 20px;
+            background-color: #fff;
+            color: #000000;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /* the  above part is same for all */
+        
+    </style>
+
+    <style>
+
+        .content{
+            /* margin-top: 200px; */
+            top: 200px;
+            padding: 200px 250px 100px 250px;
+            text-align: center;
+            word-spacing: normal;
+            line-height: 1.5;
+            font-weight: 0.1;
+        }
+
+        .bg1{
+            background-image: url("https://www.spacex.com/static/images/backgrounds/mission_feature.jpg");
+        }
+
+        .height-1{
+            height: 1098px;
+        }
+
+        .count{
+            font-weight: 300;
+            font-size: 150px;
+        }
+
+        .info{
+            font-size: 30px;
+            letter-spacing: 3px;
+        }
+
+        .bg2{
+            background-image: url(https://www.spacex.com/static/images/backgrounds/STARSHIP_CAPABILITIES_INTERPLANETARYDESTINATIONS_Mars_01_2023_01_Desktop_Darkerv2.jpg);
+        }
+
+        .height-2{
+            height: 750px;
+        }
+
+        .h2{
+            font-size: 30px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .landing p{
+            padding: 50px 250px 50px 250px;
+            text-align: center;
+            word-spacing: normal;
+            line-height: 1.5;
+            font-weight: 0.1;
+        }
+
+        #landing{
+            width: 100%;
+            height: 50%;
+            justify-content: center;
+            background-size: cover;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        
+        <div class="logo">
+            <img id="SpaceX-Logo" src="./Resources/spacex.png" alt="SpaceX Logo">
+        </div>
+
+        <div class="navbar">
+
+            <a href="./index.html">
+              <h3 class="hover">Home</h3>
+            </a>
+                        
+            <a href="./Missions.html">
+                <h3 class="hover">Missions</h3>
+            </a>
+
+            <a href="./Careers.html">
+              <h3 class="hover">Careers</h3>
+            </a>
+
+            <a href="./About.html">
+              <h3 class="hover">About</h3>
+            </a>
+
+            <a href="./contact.html">
+              <h3 class="hover">Contact Us</h3>
+            </a>
+
+        </div>
+
+    </header>
+
+    <div class="inner">
+
+        <div class="section height-1 bg1">
+            <div class="content">
+                <p>“You want to wake up in the morning and think the future is going to be great - and that's what being a spacefaring civilization is all about. It's about believing in the future and thinking that the future will be better than the past. And I can't think of anything more exciting than going out there and being among the stars.”</p>
+                <br>
+                <h3> -Elon Musk</h3>
+             </div>
+        </div>
+
+        <div class="sep">
+            <span>
+                <h1 class="count">247</h1>
+                <p class="info">Total Launch</p>
+            </span>
+
+            <span>
+                <h1 class="count">208</h1>
+                <p class="info">Total Landing</p>
+            </span>
+
+            <span>
+                <h1 class="count">181</h1>
+                <p class="info">Total Reflights</p>
+            </span>
+        </div>
+
+        <div class="section bg2 height-2">
+
+            <div class="text">
+                        
+                <div class="inner-text">
+                    <h2>MAKING HUMANITY MULTIPLANETARY</h2>
+                    <p>Building on the achievements of Falcon 9 and Falcon Heavy, SpaceX is working on a next generation of fully reusable launch vehicles that will be the most powerful ever built, capable of carrying humans to Mars and other destinations in the solar system.</p>
+                </div>
+        
+                <a href="https://www.youtube.com/watch?v=UdfKyxdSJBk" target="_blank">
+        
+                    <button class="button">
+                            Learn More
+                    </button>
+        
+                </a>
+        
+            </div>
+        
+        </div>
+
+        <div class="sep landing">
+            <h2 class="h2">Landing</h2>
+            <br>
+        </div>
+
+        <div class="sep landing">
+            <p>SpaceX's family of Falcon launch vehicles are the first and only orbital class rockets capable of reflight. Depending on the performance required for the mission, Falcon lands on one of our autonomous spaceport droneships out on the ocean or one of our landing zones near our launch pads.</p>
+            <br>
+        </div>
+
+        <div class="sep">
+            <img id="landing" src="https://www.spacex.com/static/images/infographics/F9_AUTONOMOUS_DRONESHIP_MOBILE.jpg" alt="Landing">
+        </div>
+        
+
+    </div>
+
+    <footer class="sep">
+   
+        <div class="address">
+            <h3>Address</h3>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur aliquam reiciendis magnam eos provident. Nisi dignissimos porro eaque, blanditiis molestiae accusamus! Ullam inventore ex repellat sed, magnam amet sit dolor.</p>
+        </div>
+
+        <div class="CopyRight">
+            <h3>CopyRight</h3>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae illum nostrum, fugiat hic tempora dolorem dicta animi magni temporibus, ipsum optio aspernatur nisi ipsam. Dignissimos sit cupiditate iure quasi excepturi.</p>
+        </div>
+
+
+        <div class="navbar-2">
+
+            <a href="./index.html">
+              <h3 class="hover">Home</h3>
+            </a>
+
+            <br><br>
+                        
+            <a href="./Missions.html">
+                <h3 class="hover">Missions</h3>
+            </a>
+
+            <br><br>
+
+            <a href="./Careers.html">
+              <h3 class="hover">Careers</h3>
+            </a>
+
+            <br><br>
+
+            <a href="./About.html">
+              <h3 class="hover">About</h3>
+            </a>
+
+            <br><br>
+
+            <a href="./contact.html">
+              <h3 class="hover">Contact Us</h3>
+            </a>
+
+        </div>
+
+    </footer>
+
+    <script>
+                let prevScrollPos = window.pageYOffset;
+
+        window.onscroll = function() {
+        const currentScrollPos = window.pageYOffset;
+
+        if (prevScrollPos > currentScrollPos) {
+            document.querySelector("header").style.top = "0";
+        } else {
+            document.querySelector("header").style.top = "-100px"; /* Adjust this value to hide the header completely */
+        }
+
+        prevScrollPos = currentScrollPos;
+        };
+
+    </script>
+
+</body>
+</html>

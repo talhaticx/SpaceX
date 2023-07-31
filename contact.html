@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0%;
+        }
+        
+        header{
+            background-color: transparent;
+            height: 90px;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            z-index: 999;
+            transition: top 0.3s ease-in-out;
+        }
+        
+        #SpaceX-Logo{
+            margin-left: 30px;
+        }
+        
+        .navbar{
+            width: 800px;
+            display: flex;
+            justify-content: space-evenly;
+            margin-left: 30%;
+        }
+        
+            /* copy pasted but customized */
+            /* underline hover effect */
+        .hover{
+            display: inline-block;
+            position: relative;
+            color: 
+            #ffffff;
+        }
+        
+        .hover:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            background-color: 
+            rgb(255, 255, 255);
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+        
+        .hover:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        
+        .sep{
+            width: 92.6%;
+            background-color: #000000;
+            color: #fff;
+            display: flex;
+            text-align: center;
+            padding: 50px;
+            justify-content: space-evenly;
+        }
+
+        .container-2{
+            justify-content: center;
+            align-items: center;
+            margin-top: 120px;
+            flex-direction: column;
+            padding: 0px 50px 0px 50px;
+            width: 400px;
+        }
+        
+        .navbar-2{
+            width: 800px;
+            text-align: right;
+        }
+        
+    </style>
+
+    <style>
+
+        .form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 120px;
+            flex-direction: column;
+        }
+
+        input{
+            padding: 13px;
+            font-size: 22px;
+            border-width: 1px;
+            border-color: #ffffff;
+            background-color: #000000;
+            color: #ffffff;
+            border-style: groove;
+            border-radius: 0px;
+            text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+            margin: 10px;
+        }
+
+        button{
+            margin-top: 20px;
+            padding: 13px;
+            font-size: 22px;
+            border-width: 1px;
+            border-color: #ffffff;
+            background-color: #000000;
+            color: #ffffff;
+            border-style: groove;
+            border-radius: 0px;
+            text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+            cursor: pointer;
+            transition: all 0.7s ease;
+            position: relative;
+            overflow: hidden;
+            transition: background-color 0.7s;
+        }
+
+        button::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background-color: white;
+            transform-origin: bottom; 
+            transition: transform 0.7s; 
+        }
+
+        button:hover {
+            background-color: white;
+            color: #000000;
+        }
+
+        button:hover::before {
+            transform: scaleY(1);
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        
+        <div class="logo">
+            <img id="SpaceX-Logo" src="./Resources/spacex.png" alt="SpaceX Logo">
+        </div>
+
+        <div class="navbar">
+
+            <a href="./index.html">
+              <h3 class="hover">Home</h3>
+            </a>
+                        
+            <a href="./Missions.html">
+                <h3 class="hover">Missions</h3>
+            </a>
+
+            <a href="./Careers.html">
+              <h3 class="hover">Careers</h3>
+            </a>
+
+            <a href="./About.html">
+              <h3 class="hover">About</h3>
+            </a>
+
+            <a href="./contact.html">
+              <h3 class="hover">Contact Us</h3>
+            </a>
+
+        </div>
+
+    </header>
+
+    <div class="sep">  
+
+        <span class="container-1">
+            <form action="" class="form">
+
+                <input type="text" placeholder="Name" id="name">
+                <input type="email" placeholder="Email" id="email">
+                <input type="text" placeholder="Message" id="message">
+                <button class="submit">Submit</button>
+        
+            </form>
+        </span>
+        <span class="container-2">
+            <h1>Contact Us</h1>
+            <br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque harum hic voluptatem? Dolorum possimus natus doloremque, molestiae quaerat sunt quia neque mollitia, inventore fugit alias corrupti dolores nobis reiciendis voluptates.</p>
+        </span>
+        
+    </div>
+
+    <footer class="sep">
+   
+        <div class="address">
+            <h3>Address</h3>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur aliquam reiciendis magnam eos provident. Nisi dignissimos porro eaque, blanditiis molestiae accusamus! Ullam inventore ex repellat sed, magnam amet sit dolor.</p>
+        </div>
+
+        <div class="CopyRight">
+            <h3>CopyRight</h3>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae illum nostrum, fugiat hic tempora dolorem dicta animi magni temporibus, ipsum optio aspernatur nisi ipsam. Dignissimos sit cupiditate iure quasi excepturi.</p>
+        </div>
+
+
+        <div class="navbar-2">
+
+            <a href="./index.html">
+              <h3 class="hover">Home</h3>
+            </a>
+
+            <br><br>
+                        
+            <a href="./Missions.html">
+                <h3 class="hover">Missions</h3>
+            </a>
+
+            <br><br>
+
+            <a href="./Careers.html">
+              <h3 class="hover">Careers</h3>
+            </a>
+
+            <br><br>
+
+            <a href="./About.html">
+              <h3 class="hover">About</h3>
+            </a>
+
+            <br><br>
+
+            <a href="./contact.html">
+              <h3 class="hover">Contact Us</h3>
+            </a>
+
+        </div>
+
+    </footer>
+
+    <script>
+                let prevScrollPos = window.pageYOffset;
+
+        window.onscroll = function() {
+        const currentScrollPos = window.pageYOffset;
+
+        if (prevScrollPos > currentScrollPos) {
+            document.querySelector("header").style.top = "0";
+        } else {
+            document.querySelector("header").style.top = "-100px"; /* Adjust this value to hide the header completely */
+        }
+
+        prevScrollPos = currentScrollPos;
+        };
+
+    </script>
+</body>
+</html>
